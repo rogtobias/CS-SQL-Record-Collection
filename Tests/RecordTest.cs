@@ -58,7 +58,7 @@ namespace RecordCollection
       testRecord.Save();
 
       //Act
-      Re foundRecord = Record.Find(testRecord.GetId());
+      Record foundRecord = Record.Find(testRecord.GetId());
 
       //Assert
       Assert.Equal(testRecord, foundRecord);
