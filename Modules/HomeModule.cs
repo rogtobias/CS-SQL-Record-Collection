@@ -22,6 +22,7 @@ namespace RecordCollection
         List<Record> allRecords = Record.GetAll();
         return View["view_all.cshtml", allRecords];
       };
+      Get["view_all/{id}"] = parameters => {}
     }
   }
 }
